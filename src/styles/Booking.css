@@ -1,0 +1,95 @@
+.booking-panel {
+  padding: 32px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  box-shadow: var(--shadow-card);
+  align-self: start;
+  transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.booking-panel h2 {
+  margin: 0 0 20px;
+  font-size: 26px;
+  color: var(--text-primary);
+  transition: color 0.25s ease;
+}
+
+.booking-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.location-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  background: var(--bg-input);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.location-input:focus-within {
+  background: var(--bg-input-focus);
+  border-color: var(--border-color);
+}
+
+.location-input input {
+  width: 100%;
+  min-width: 0;
+  padding: 18px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  color: var(--text-primary);
+}
+
+.location-input input::placeholder {
+  color: var(--text-secondary);
+}
+
+.schedule-select {
+  padding: 18px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--bg-input);
+  color: var(--text-primary);
+  font: inherit;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.schedule-select:focus {
+  border-color: var(--border-color);
+}
+
+.schedule-select option {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.search-btn {
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease, color 0.2s ease;
+}
+
+.search-btn:hover {
+  background: var(--btn-primary-hover);
+}
+
+.search-btn:active {
+  transform: scale(0.99);
+}
+

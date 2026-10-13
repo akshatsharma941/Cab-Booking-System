@@ -1,0 +1,127 @@
+.navbar {
+  height: 74px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-card);
+  width: 100%;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.logo {
+  color: var(--text-primary);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.nav-links,
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-actions {
+  margin-left: auto;
+}
+
+.nav-link,
+.login-btn {
+  padding: 10px 14px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-link:hover,
+.login-btn:hover {
+  color: var(--text-primary);
+  background: var(--btn-ghost-hover);
+}
+
+.nav-link.active {
+  color: var(--text-primary);
+  font-weight: 600;
+  border-bottom: 3px solid var(--text-primary);
+  border-radius: 6px 6px 0 0;
+}
+
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: var(--bg-input);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, color 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--bg-input-focus);
+  transform: scale(1.06);
+}
+
+.theme-toggle-btn svg {
+  display: block;
+}
+
+.signup-btn {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 30px;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, opacity 0.2s ease;
+}
+
+.signup-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    gap: 4px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .nav-link,
+  .login-btn {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .signup-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
